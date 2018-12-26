@@ -8,9 +8,11 @@ import { StatusBar } from '@ionic-native/status-bar/ngx';
 
 import { AppComponent } from './app.component';
 import { AppRoutingModule } from './app-routing.module';
+import { TuberiaPipe } from './pipes/tuberia.pipe';
+import { DirectivaDirective } from './directivas/directiva.directive';
 
 @NgModule({
-  declarations: [AppComponent],
+  declarations: [AppComponent, TuberiaPipe, DirectivaDirective],
   entryComponents: [],
   imports: [BrowserModule, IonicModule.forRoot(), AppRoutingModule],
   providers: [
